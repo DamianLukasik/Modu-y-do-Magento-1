@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Mage_ProductsUpdates>
+			<version>0.0.1</version>
+		</Mage_ProductsUpdates>
+	</modules>
+	<global>
+        <models>
+             <productsupdates>
+                 <class>Mage_ProductsUpdates_Model</class>
+             </productsupdates>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <productsupdates_import>
+                <schedule><cron_expr>15 3 * * 1-5</cron_expr></schedule>
+                <run><model>productsupdates/cron::import</model></run>
+            </productsupdates_import>
+        </jobs>
+	</crontab>
+</config>

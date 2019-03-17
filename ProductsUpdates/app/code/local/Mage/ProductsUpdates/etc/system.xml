@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <dev>
+            <groups>
+                <automatic_updates_products_group>
+                    <label>Automatic updating of products</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>						
+						<text_field>
+                            <label>URL address to CSV file</label>
+                            <comment>Text field with URL address to CSV file that will be needed to updating of products.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_field>
+                    </fields>
+                </automatic_updates_products_group>
+            </groups>
+        </dev>
+    </sections>
+</config>
